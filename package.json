@@ -1,17 +1,21 @@
 {
-	"private": true,
-	"scripts": {
-		"lerna": "./node_modules/.bin/lerna",
-		"bootstrap": "npm run lerna -- bootstrap --hoist --nohoist=ts-node",
-		"gulp": "npm run lerna -- exec ./node_modules/.bin/gulp",
-		"tsc": "npm run gulp -- tsc",
-		"tslint": "npm run gulp -- tslint",
-		"test": "npm run gulp -- test",
-		"clean-build": "npm run gulp -- clean",
-		"clean-node_modules": "npm run lerna -- clean",
-		"clean-all": "npm run clean-build && npm run clean-node_modules"
-	},
-	"devDependencies": {
-		"lerna": "^3.4.3"
-	}
+  "name": "skill-sample-js-trivia",
+  "version": "2.0.0",
+  "description": "A simple trivia skill i18n version.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "alexa",
+    "skill",
+    "trivia"
+  ],
+  "author": "Amazon.com",
+  "license": "SEE LICENSE IN LICENSE.TXT",
+  "dependencies": {
+    "ask-sdk": "^2.0.0",
+    "i18next": "^10.6.0",
+    "i18next-sprintf-postprocessor": "^0.2.2"
+  }
 }

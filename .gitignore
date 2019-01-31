@@ -1,5 +1,1 @@
-dist/
-node_modules/
-typedoc/
-package-lock.json
-lerna-debug.log
+node_modules
